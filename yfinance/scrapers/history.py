@@ -1527,7 +1527,7 @@ class PriceHistory:
 
             for k,v in div_status.items():
                 if k not in div_status_df:
-                    if isinstance(v, (bool, np.bool)):
+                    if isinstance(v, (bool, np.bool_)):
                         div_status_df[k] = False
                     elif isinstance(v, int):
                         div_status_df[k] = 0
